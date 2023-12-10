@@ -93,11 +93,11 @@ module SDPRAM_SINGLECLK #(
 
     /* Output */
     generate
-		if (OUTPUT_REG == "TRUE") begin 
-            assign RDATA_O = RDATA_REG_2P;
+	if (OUTPUT_REG == "TRUE") begin
+	    assign RDATA_O = RDATA_REG_2P;
         end else begin
-			assign RDATA_O = RDATA_REG_1P;
+	    assign RDATA_O = RDATA_REG_1P;
         end
-	endgenerate
+    endgenerate
 
 endmodule
