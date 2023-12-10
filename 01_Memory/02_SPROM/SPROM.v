@@ -16,7 +16,7 @@
 *       RDATA_O      : Stored Data Output
 *
 *   Parameter
-*       DATA_WIDTH   : Coefficient DATA Width
+*       DATA_WIDTH   : DATA Bit Width
 *       ADDR_WIDTH   : ROM Address Width
 *       OUTPUT_REG   : Output Register Enable
 *       ROM_INIT_FILE: ROM Initialization File name
