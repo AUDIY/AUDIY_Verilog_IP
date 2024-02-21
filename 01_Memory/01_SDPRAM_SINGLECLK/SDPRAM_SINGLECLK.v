@@ -3,9 +3,9 @@
 *
 * Simple Dual-Port RAM (Single Clock)
 *
-* Version: 0.10
+* Version: 0.11
 * Author : AUDIY
-* Date   : 2023/12/10
+* Date   : 2024/2/22
 *
 * Port
 *   Input
@@ -41,6 +41,8 @@
 *
 -----------------------------------------------------------------------------*/
 
+`timescale 1ns/10ps
+
 module SDPRAM_SINGLECLK #(
     /* Parameter Definition */
     parameter DATA_WIDTH = 8,
@@ -62,7 +64,7 @@ module SDPRAM_SINGLECLK #(
 
     /* Local Parameters */
     localparam MEMORY_DEPTH = 2**ADDR_WIDTH;
-    localparam MAX_DATA     = (1 << ADDR_WIDTH) - 1;
+    //localparam MAX_DATA     = (1 << ADDR_WIDTH) - 1; // Unused now.
 
     /* Internal Wire/Register Definition */
     reg [DATA_WIDTH-1:0] RAM[MEMORY_DEPTH-1:0];
@@ -93,10 +95,10 @@ module SDPRAM_SINGLECLK #(
 
     /* Output */
     generate
-	if (OUTPUT_REG == "TRUE") begin
-	    assign RDATA_O = RDATA_REG_2P;
-        end else begin
-	    assign RDATA_O = RDATA_REG_1P;
+        if (OUTPUT_REG == "TRUE") begin : gen_reg2p
+            assign RDATA_O = RDATA_REG_2P;
+        end else begin : gen_reg1p
+            assign RDATA_O = RDATA_REG_1P;
         end
     endgenerate
 
