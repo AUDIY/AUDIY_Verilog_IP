@@ -41,8 +41,6 @@
 *
 -----------------------------------------------------------------------------*/
 
-`timescale 1ns/10ps
-
 module SDPRAM_SINGLECLK #(
     /* Parameter Definition */
     parameter DATA_WIDTH = 8,
