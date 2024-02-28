@@ -3,9 +3,9 @@
 *
 * Single-Port ROM
 *
-* Version: 0.10
+* Version: 0.11
 * Author : AUDIY
-* Date   : 2023/12/10
+* Date   : 2022/2/28
 *
 * Port
 *   Input
@@ -16,14 +16,14 @@
 *       RDATA_O      : Stored Data Output
 *
 *   Parameter
-*       DATA_WIDTH   : DATA Bit Width
+*       DATA_WIDTH   : Stored DATA Width
 *       ADDR_WIDTH   : ROM Address Width
 *       OUTPUT_REG   : Output Register Enable
 *       ROM_INIT_FILE: ROM Initialization File name
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
-| Copyright AUDIY 2023.                                                        |
+| Copyright AUDIY 2023 - 2024.                                                 |
 |                                                                              |
 | This source describes Open Hardware and is licensed under the CERN-OHL-P v2. |
 |                                                                              |
@@ -73,9 +73,9 @@ module SPROM #(
 
     /* Output */
     generate
-        if (OUTPUT_REG == "TRUE") begin
+        if (OUTPUT_REG == "TRUE") begin : gen_reg2p
             assign RDATA_O = RDATAO_REG_2P;
-        end else begin
+        end else begin : gen_reg1p
             assign RDATA_O = RDATAO_REG_1P;
         end
     endgenerate
