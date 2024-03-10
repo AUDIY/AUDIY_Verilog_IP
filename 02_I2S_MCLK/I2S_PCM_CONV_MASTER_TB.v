@@ -3,9 +3,9 @@
 *
 * Test-bench for I2S_PCM_CONV_MASTER.v
 * 
-* Version: 0.10
+* Version: 0.11
 * Author : AUDIY
-* Date   : 2024/02/12
+* Date   : 2024/03/10
 * 
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -96,7 +96,9 @@ module I2S_PCM_CONV_MASTER_TB();
         PCMR_I <= ~DATAREG;
     end
 
-    PCM_I2S_CONV_MASTER u_PCM_I2S_CONV_MASTER(
+    PCM_I2S_CONV_MASTER #(
+        .PCM_BIT_WIDTH(DATA_WIDTH)
+    ) u_PCM_I2S_CONV_MASTER (
         .MCLK_I(MCLK_I),
         .BCK_I(BCK_I),
         .WCLK_I(LRCK_I),
@@ -108,9 +110,10 @@ module I2S_PCM_CONV_MASTER_TB();
         .LRCK_O(LRCK),
         .DATA_O(DATA)
     );
-    defparam u_PCM_I2S_CONV_MASTER.PCM_BIT_WIDTH = DATA_WIDTH;
 
-    I2S_PCM_CONV_MASTER u_I2S_PCM_CONV_MASTER(
+    I2S_PCM_CONV_MASTER #(
+        .PCM_BIT_WIDTH(DATA_WIDTH)
+    ) u_I2S_PCM_CONV_MASTER (
         .MCLK_I(MCLK_I),
         .BCK_I(BCK),
         .LRCK_I(LRCK),
@@ -122,6 +125,5 @@ module I2S_PCM_CONV_MASTER_TB();
         .DATAL_O(DATAL_O),
         .DATAR_O(DATAR_O)
     );
-    defparam u_I2S_PCM_CONV_MASTER.PCM_BIT_WIDTH = DATA_WIDTH;
 
 endmodule

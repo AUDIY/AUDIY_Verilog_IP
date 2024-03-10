@@ -3,9 +3,9 @@
 *
 * I2S to PCM Converter (Synchronous w/ MCLK)
 * 
-* Version: 0.10
+* Version: 0.11
 * Author : AUDIY
-* Date   : 2024/02/12
+* Date   : 2024/03/10
 * 
 * Port
 *   Input
