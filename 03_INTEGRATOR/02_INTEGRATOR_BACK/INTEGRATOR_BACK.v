@@ -8,9 +8,9 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.01
+* Version: 1.02
 * Author : AUDIY
-* Date   : 2024/05/02
+* Date   : 2024/05/03
 * 
 * Port
 *   Input
@@ -69,9 +69,10 @@ module INTEGRATOR_BACK #(
     reg CLKO_REG = 1'b0;
     reg signed [DATA_BIT_WIDTH-1:0] DATA_REG_POS = {(DATA_BIT_WIDTH){1'b0}};
     reg signed [DATA_BIT_WIDTH-1:0] DATA_REG_NEG = {(DATA_BIT_WIDTH){1'b0}};
+    reg signed [DATA_BIT_WIDTH-1:0] DATAI_REG    = {(DATA_BIT_WIDTH){1'b0}}; 
     wire signed [DATA_BIT_WIDTH:0] SUM_DATA;
 
-    assign SUM_DATA = (NRST_I == 1'b0) ? {(DATA_BIT_WIDTH+1){1'b0}} : ({DATA_I[DATA_BIT_WIDTH-1], DATA_I} + {DATA_REG_NEG[DATA_BIT_WIDTH-1], DATA_REG_NEG});
+    assign SUM_DATA = (NRST_I == 1'b0) ? {(DATA_BIT_WIDTH+1){1'b0}} : ({DATAI_REG[DATA_BIT_WIDTH-1], DATAI_REG} + {DATA_REG_NEG[DATA_BIT_WIDTH-1], DATA_REG_NEG});
 
     always @(posedge MCLK_I ) begin
         if (NRST_I == 1'b0) begin
@@ -79,6 +80,7 @@ module INTEGRATOR_BACK #(
             CLKO_REG     <=                   1'b0;
             DATA_REG_POS <= {(DATA_BIT_WIDTH){1'b0}};
             DATA_REG_NEG <= {(DATA_BIT_WIDTH){1'b0}};
+            DATAI_REG    <= {(DATA_BIT_WIDTH){1'b0}};
         end else begin
             CLKI_REG <= CLK_I;
 
@@ -91,6 +93,7 @@ module INTEGRATOR_BACK #(
             /* Negative Edge of Data Clock (CLK_I) */
             if ((CLKI_REG == 1'b1) && (CLK_I == 1'b0)) begin
                 CLKO_REG     <= CLK_I       ;
+                DATAI_REG    <= DATA_I      ;
                 DATA_REG_NEG <= DATA_REG_POS;
             end
         end
