@@ -7,6 +7,6 @@ Code reviews are welcome!
 The author made a decision to shift HDL from Verilog to SystemVerilog.  
 So it means that the author doesn't maintain and use modules in this repository.
 
-When the author is ready to upload new system verilog IPs, this repository will be archived.
+The new IP repository written in SystemVerilog is [AUDIY_SV_IP](https://github.com/AUDIY/AUDIY_SV_IP)
 
 Thanks.
