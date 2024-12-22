@@ -3,9 +3,9 @@
 *
 * Test bench for DIFFERENTIATOR_BACK.v
 *
-* Version: 1.02
+* Version: 1.03
 * Author : AUDIY
-* Date   : 2024/05/03
+* Date   : 2024/12/22
 * 
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -48,26 +48,26 @@ module DIFFERENTIATOR_BACK_tb ();
     INTEGRATOR_FWD #(
         .DATA_BIT_WIDTH(DATA_BIT_WIDTH)
     ) u0 (
-        .MCLK_I (MCLK_I ),
-        .CLK_I  (CLK_I  ),
-        .DATA_I (DATA_I ),
-        .NRST_I (NRST_I ),
-        .CLK_O  (CLK_O_INT),
-        .DATA_O (DATA_O_INT),
-        .OFDET_O(OFDET_O_INT),
-        .UFDET_O(UFDET_O_INT)
+        .MCLK_I  (MCLK_I      ),
+        .CLK_I   (CLK_I       ),
+        .DATA_I  (DATA_I      ),
+        .NRST_I  (NRST_I      ),
+        .CLK_O   (CLK_O_INT   ),
+        .DATA_O  (DATA_O_INT  ),
+        .OFDET_O (OFDET_O_INT ),
+        .UFDET_O (UFDET_O_INT )
     );
 
     DIFFERENTIATOR_BACK #(
         .DATA_BIT_WIDTH(DATA_BIT_WIDTH),
-        .LATCH_LENGTH(LATCH_LENGTH)
+        .LATCH_LENGTH  (LATCH_LENGTH  )
     ) u1 (
-        .MCLK_I(MCLK_I),
-        .CLK_I(CLK_O_INT),
-        .DATA_I(DATA_O_INT),
-        .NRST_I(NRST_I),
-        .CLK_O(CLK_O_DIFF),
-        .DATA_O(DATA_O_DIFF),
+        .MCLK_I (MCLK_I      ),
+        .CLK_I  (CLK_O_INT   ),
+        .DATA_I (DATA_O_INT  ),
+        .NRST_I (NRST_I      ),
+        .CLK_O  (CLK_O_DIFF  ),
+        .DATA_O (DATA_O_DIFF ),
         .OFDET_O(OFDET_O_DIFF),
         .UFDET_O(UFDET_O_DIFF)
     );

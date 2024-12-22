@@ -3,9 +3,9 @@
 *
 * Test bench for INTEGRATOR_FWD.v
 *
-* Version: 1.01
+* Version: 1.02
 * Author : AUDIY
-* Date   : 2024/05/01
+* Date   : 2024/12/22
 * 
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -78,6 +78,6 @@ module INTEGRATOR_FWD_tb ();
     end
 
     assign MCLK_I = CLK_REG[0];
-    assign CLK_I = CLK_REG[5];
+    assign CLK_I  = CLK_REG[5];
 
 endmodule

@@ -3,9 +3,9 @@
 *
 * Test bench for INTEGRATOR_FWD.v & INTEGRATOR_BACK.v
 *
-* Version: 1.01
+* Version: 1.02
 * Author : AUDIY
-* Date   : 2024/05/02
+* Date   : 2024/12/22
 * 
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------

@@ -3,9 +3,9 @@
 *
 * Test bench for Simple Dual-Port RAM (Single Clock)
 *
-* Version: 0.10
+* Version: 0.12
 * Author : AUDIY
-* Date   : 2023/12/10
+* Date   : 2024/12/22
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -28,36 +28,36 @@
 
 module sim
 #(
-	parameter DATA_WIDTH=8,
-	parameter ADDR_WIDTH=9,
-	parameter OUTPUT_REG="FALSE",
-	parameter RAM_INIT_FILE="ram_init_file.mem"
+	parameter DATA_WIDTH   = 8,
+	parameter ADDR_WIDTH   = 9,
+	parameter OUTPUT_REG   = "FALSE",
+	parameter RAM_INIT_FILE= "ram_init_file.mem"
 )
 ();
 
 reg [DATA_WIDTH-1:0] wdata, expected;
 reg [ADDR_WIDTH-1:0] waddr, raddr;
-reg wclk, we, re, clock;
+reg wclk, we, re, clock, rclk;
 wire [DATA_WIDTH-1:0] rdata;
 integer cycle_count;
 
 // Instantiate the DUT (design under test)
 SDPRAM_SINGLECLK
 #(
-	.DATA_WIDTH(DATA_WIDTH),
-	.ADDR_WIDTH(ADDR_WIDTH),
-	.OUTPUT_REG(OUTPUT_REG),
+	.DATA_WIDTH   (DATA_WIDTH   ),
+	.ADDR_WIDTH   (ADDR_WIDTH   ),
+	.OUTPUT_REG   (OUTPUT_REG   ),
 	.RAM_INIT_FILE(RAM_INIT_FILE)
 ) 
 dut2
 (
-	.CLK_I(wclk),
-	.WADDR_I(waddr),
-	.WENABLE_I(we),
-	.WDATA_I(wdata),
-	.RADDR_I(raddr),
-	.RENABLE_I(re),
-	.RDATA_O(rdata)
+	.CLK_I    (wclk ),
+	.WADDR_I  (waddr),
+	.WENABLE_I(we   ),
+	.WDATA_I  (wdata),
+	.RADDR_I  (raddr),
+	.RENABLE_I(re   ),
+	.RDATA_O  (rdata)
 );
 
 initial begin
@@ -66,12 +66,12 @@ initial begin
 	
 	// Initialize the DUT inputs
 	wdata = 70;
-	waddr = 0;
-	wclk = 0;
-	we = 0;
-	raddr = 0;
-	re = 0;
-	rclk = 0;
+	waddr = 0 ;
+	wclk  = 0 ;
+	we    = 0 ;
+	raddr = 0 ;
+	re    = 0 ;
+	rclk  = 0 ;
 	
 	// Initialize the system clock
 	clock = 0;
@@ -83,9 +83,9 @@ end // initial begin
 // Generate the clocks
 // drive read & write clock from same system clock
 always #75 begin
-	clock = ~clock;
-	#25 rclk = ~rclk;
-	#25 wclk = ~wclk;
+	    clock = ~clock;
+	#25 rclk  = ~rclk ;
+	#25 wclk  = ~wclk ;
 end
 
 // Increment the cycle counter on the postive clock

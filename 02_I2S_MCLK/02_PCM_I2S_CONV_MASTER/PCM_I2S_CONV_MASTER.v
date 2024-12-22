@@ -3,9 +3,9 @@
 *
 * PCM to I2S Converter (Synchronous w/ MCLK)
 * 
-* Version: 0.11
+* Version: 0.12
 * Author : AUDIY
-* Date   : 2024/03/10
+* Date   : 2024/12/22
 * 
 * Port
 *   Input
@@ -40,6 +40,8 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
+
 module PCM_I2S_CONV_MASTER #(
     /* Parameter Definition */
     parameter PCM_BIT_WIDTH = 32
@@ -100,9 +102,11 @@ module PCM_I2S_CONV_MASTER #(
     end
 
     /* Output Assign */
-    assign MCLK_O = MCLK_I;
-    assign BCK_O  = BCK_REG;
-    assign LRCK_O = WCLK_REG;
+    assign MCLK_O = MCLK_I   ;
+    assign BCK_O  = BCK_REG  ;
+    assign LRCK_O = WCLK_REG ;
     assign DATA_O = DATAO_REG;
 
 endmodule
+
+`default_nettype wire

@@ -3,9 +3,9 @@
 *
 * Back Eular Method Differentiator (w/ M-length Latch) Module
 *
-* Version: 1.02
+* Version: 1.03
 * Author : AUDIY
-* Date   : 2024/05/02
+* Date   : 2024/12/22
 * 
 * Port
 *   Input
@@ -43,6 +43,8 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
+
 module DIFFERENTIATOR_BACK #(
     /* Parameter Definition */
     parameter DATA_BIT_WIDTH = 32,
@@ -145,3 +147,5 @@ module DIFFERENTIATOR_BACK #(
     endfunction
 
 endmodule
+
+`default_nettype wire
