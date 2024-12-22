@@ -41,9 +41,9 @@
 module SPROM #(
     /* Parameter Definition */
     parameter DATA_WIDTH    = 16,
-	parameter ADDR_WIDTH    = 8,
-	parameter OUTPUT_REG    = "TRUE",
-	parameter ROM_INIT_FILE = "initrom.hex"
+    parameter ADDR_WIDTH    = 8,
+    parameter OUTPUT_REG    = "TRUE",
+    parameter ROM_INIT_FILE = "initrom.hex"
 ) (
     /* Input Port Definition */
     input  wire                  CLK_I,
