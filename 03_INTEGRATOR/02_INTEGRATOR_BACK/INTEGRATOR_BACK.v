@@ -8,9 +8,9 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.02
+* Version: 1.03
 * Author : AUDIY
-* Date   : 2024/05/03
+* Date   : 2024/12/22
 * 
 * Port
 *   Input
@@ -47,6 +47,8 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
+
 module INTEGRATOR_BACK #(
     /* Parameter Definition */
     parameter DATA_BIT_WIDTH = 32
@@ -65,11 +67,11 @@ module INTEGRATOR_BACK #(
 );
 
     /* Internal wire/reg Definition */
-    reg CLKI_REG = 1'b0;
-    reg CLKO_REG = 1'b0;
-    reg signed [DATA_BIT_WIDTH-1:0] DATA_REG_POS = {(DATA_BIT_WIDTH){1'b0}};
-    reg signed [DATA_BIT_WIDTH-1:0] DATA_REG_NEG = {(DATA_BIT_WIDTH){1'b0}};
-    reg signed [DATA_BIT_WIDTH-1:0] DATAI_REG    = {(DATA_BIT_WIDTH){1'b0}}; 
+    reg  CLKI_REG = 1'b0;
+    reg  CLKO_REG = 1'b0;
+    reg  signed [DATA_BIT_WIDTH-1:0] DATA_REG_POS = {(DATA_BIT_WIDTH){1'b0}};
+    reg  signed [DATA_BIT_WIDTH-1:0] DATA_REG_NEG = {(DATA_BIT_WIDTH){1'b0}};
+    reg  signed [DATA_BIT_WIDTH-1:0] DATAI_REG    = {(DATA_BIT_WIDTH){1'b0}}; 
     wire signed [DATA_BIT_WIDTH:0] SUM_DATA;
 
     assign SUM_DATA = (NRST_I == 1'b0) ? {(DATA_BIT_WIDTH+1){1'b0}} : ({DATAI_REG[DATA_BIT_WIDTH-1], DATAI_REG} + {DATA_REG_NEG[DATA_BIT_WIDTH-1], DATA_REG_NEG});
@@ -130,3 +132,5 @@ module INTEGRATOR_BACK #(
     endfunction
 
 endmodule
+
+`default_nettype wire

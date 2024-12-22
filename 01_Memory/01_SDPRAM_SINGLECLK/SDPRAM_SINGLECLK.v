@@ -3,9 +3,9 @@
 *
 * Simple Dual-Port RAM (Single Clock)
 *
-* Version: 0.11
+* Version: 0.12
 * Author : AUDIY
-* Date   : 2024/2/22
+* Date   : 2024/12/22
 *
 * Port
 *   Input
@@ -40,21 +40,22 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
 
 module SDPRAM_SINGLECLK #(
     /* Parameter Definition */
-    parameter DATA_WIDTH = 8,
-    parameter ADDR_WIDTH = 9,
-    parameter OUTPUT_REG = "TRUE",
+    parameter DATA_WIDTH    = 8,
+    parameter ADDR_WIDTH    = 9,
+    parameter OUTPUT_REG    = "TRUE",
     parameter RAM_INIT_FILE = "RAMINIT.hex"
 ) (
     /* Input Port Definiton */
-    input  wire                  CLK_I,
-    input  wire [ADDR_WIDTH-1:0] WADDR_I,
-    input  wire                  WENABLE_I,
-    input  wire [DATA_WIDTH-1:0] WDATA_I,
-    input  wire [ADDR_WIDTH-1:0] RADDR_I,
-    input  wire                  RENABLE_I,
+    input wire                  CLK_I  ,
+    input wire [ADDR_WIDTH-1:0] WADDR_I,
+    input wire                  WENABLE_I,
+    input wire [DATA_WIDTH-1:0] WDATA_I,
+    input wire [ADDR_WIDTH-1:0] RADDR_I,
+    input wire                  RENABLE_I,
 
     /* Output Port Definition */
     output wire [DATA_WIDTH-1:0] RDATA_O
@@ -101,3 +102,5 @@ module SDPRAM_SINGLECLK #(
     endgenerate
 
 endmodule
+
+`default_nettype wire

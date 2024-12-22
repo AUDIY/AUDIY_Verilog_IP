@@ -8,9 +8,9 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.01
+* Version: 1.02
 * Author : AUDIY
-* Date   : 2024/05/01
+* Date   : 2024/12/22
 * 
 * Port
 *   Input
@@ -47,6 +47,8 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
+
 module INTEGRATOR_FWD #(
     /* Parameter Definition */
     parameter DATA_BIT_WIDTH = 32
@@ -137,3 +139,5 @@ module INTEGRATOR_FWD #(
     assign UFDET_O = UFDET_REG_NEG;
 
 endmodule
+
+`default_nettype wire

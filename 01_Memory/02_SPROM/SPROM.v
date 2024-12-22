@@ -3,9 +3,9 @@
 *
 * Single-Port ROM
 *
-* Version: 0.11
+* Version: 0.12
 * Author : AUDIY
-* Date   : 2022/2/28
+* Date   : 2024/12/22
 *
 * Port
 *   Input
@@ -36,12 +36,13 @@
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
+`default_nettype none
 
 module SPROM #(
     /* Parameter Definition */
-    parameter DATA_WIDTH = 16,
-	parameter ADDR_WIDTH = 8,
-	parameter OUTPUT_REG = "TRUE",
+    parameter DATA_WIDTH    = 16,
+	parameter ADDR_WIDTH    = 8,
+	parameter OUTPUT_REG    = "TRUE",
 	parameter ROM_INIT_FILE = "initrom.hex"
 ) (
     /* Input Port Definition */
@@ -81,3 +82,5 @@ module SPROM #(
     endgenerate
 
 endmodule
+
+`default_nettype wire

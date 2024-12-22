@@ -3,9 +3,9 @@
 *
 * Single-Port ROM
 *
-* Version: 0.10
+* Version: 0.12
 * Author : AUDIY
-* Date   : 2023/12/10
+* Date   : 2024/12/22
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -23,38 +23,35 @@
 *
 -----------------------------------------------------------------------------*/
 
-
 `resetall
 `timescale 1ns/10ps
 
 // TOP MODULE
-module SPROM_tb
-#(
-	parameter DATA_WIDTH = 16,
-	parameter ADDR_WIDTH = 8,
-	parameter OUTPUT_REG = "FALSE",
-	parameter ROM_INIT_FILE = "initrom.hex"
-)
-();
+module SPROM_tb;
 
-	reg [ADDR_WIDTH - 1 : 0] ADDR;
-	reg clock;
-	reg [DATA_WIDTH - 1 : 0] expected;
-	wire [DATA_WIDTH - 1 : 0] OUT;
-	integer cycle_count;
+	localparam DATA_WIDTH    = 16           ;
+	localparam ADDR_WIDTH    = 8            ;
+	localparam OUTPUT_REG    = "FALSE"      ;
+	localparam ROM_INIT_FILE = "initrom.hex";
+
+	reg     [ADDR_WIDTH  - 1 : 0] ADDR       ;
+	reg                           clock      ;
+	reg     [DATA_WIDTH  - 1 : 0] expected   ;
+	wire    [DATA_WIDTH  - 1 : 0] OUT        ;
+	integer                       cycle_count;
 
 	SPROM
 	#(
-		.DATA_WIDTH(DATA_WIDTH),
-		.ADDR_WIDTH(ADDR_WIDTH),
-		.OUTPUT_REG(OUTPUT_REG),
+		.DATA_WIDTH   (DATA_WIDTH   ),
+		.ADDR_WIDTH   (ADDR_WIDTH   ),
+		.OUTPUT_REG   (OUTPUT_REG   ),
 		.ROM_INIT_FILE(ROM_INIT_FILE)
 	)
 	dut
 	(
-		.CLK_I(clock),
-		.RADDR_I(ADDR),
-		.RDATA_O(OUT)
+		.CLK_I  (clock),
+		.RADDR_I(ADDR ),
+		.RDATA_O(OUT  )
 	);
 
 	// Initialize inputs
@@ -62,8 +59,8 @@ module SPROM_tb
 		$dumpfile("outflow/SPROM.vcd");
 		$dumpvars(0, SPROM_tb);
    
-		ADDR = 0;
-		clock = 0;
+		ADDR        =  0;
+		clock       =  0;
 		cycle_count = -2;
 	end
 

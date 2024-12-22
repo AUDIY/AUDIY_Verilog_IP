@@ -3,9 +3,9 @@
 *
 * Asynchronous Reset (Active LOW) Synchronizer
 *
-* Version: 1.00
+* Version: 1.01
 * Author : AUDIY
-* Date   : 2024/12/16
+* Date   : 2024/12/22
 * 
 * Port
 *   Input
@@ -34,6 +34,7 @@
 *
 -----------------------------------------------------------------------------*/
 `default_nettype none
+
 module NRST_SYNCHRONIZER #(
     parameter STAGES = 2
 ) (
@@ -57,3 +58,5 @@ module NRST_SYNCHRONIZER #(
     assign NRST_O = NRST_SYNC[STAGES - 1];
     
 endmodule
+
+`default_nettype wire
