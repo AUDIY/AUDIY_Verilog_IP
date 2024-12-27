@@ -3,9 +3,9 @@
 *
 * True Dual-Port RAM (Dual Clock)
 *
-* Version: 0.01
+* Version: 0.02
 * Author : AUDIY
-* Date   : 2024/12/23
+* Date   : 2024/12/28
 *
 * Port
 *   Input

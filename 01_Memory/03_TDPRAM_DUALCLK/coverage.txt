@@ -1,0 +1,13 @@
+Coverage Report Summary Data by DU
+
+=================================================================================
+=== Design Unit: work.TDPRAM_DUALCLK
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         4         0   100.00%
+    Statements                      11        11         0   100.00%
+
+
+Total Coverage By Design Unit (filtered view): 100.00%
+
