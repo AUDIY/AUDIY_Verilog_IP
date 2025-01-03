@@ -30,7 +30,7 @@
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
-| Copyright AUDIY 2024.                                                        |
+| Copyright AUDIY 2024 - 2025.                                                 |
 |                                                                              |
 | This source describes Open Hardware and is licensed under the CERN-OHL-P v2. |
 |                                                                              |
