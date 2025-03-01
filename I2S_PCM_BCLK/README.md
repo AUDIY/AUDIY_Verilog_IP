@@ -19,5 +19,5 @@ Asynchronous reset (Active Low).
 PCM Word Clock.
 - PCML_O  
 PCM Left Data.
-- PCMR_O
+- PCMR_O  
 PCM Right Data.
