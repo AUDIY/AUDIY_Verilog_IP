@@ -15,3 +15,9 @@ Mute control (Active Low).
 Asynchronous reset (Active Low).
 
 ### Output
+- WCLK_O  
+PCM Word Clock.
+- PCML_O  
+PCM Left Data.
+- PCMR_O
+PCM Right Data.
