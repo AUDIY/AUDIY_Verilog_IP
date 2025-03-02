@@ -1,6 +1,14 @@
 # I2S_PCM_BCLK
 I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 
+## Status
+|Item|Status|
+|:------|:---------|
+|Version|0.01|
+|Date   |2025/03/02|
+|Simulated|Yes|
+|Real Machine|Not yet|
+
 ## Port Definition
 ### Input
 - BCLK_I  
