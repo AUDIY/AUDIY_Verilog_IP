@@ -3,9 +3,9 @@
 * 
 *   I2S to PCM converter module (Synchronous w/ BCLK)
 *
-* Version: 0.01
+* Version: 1.00
 * Author : AUDIY
-* Date   : 2025/03/02
+* Date   : 2025/03/04
 *
 * Port
 *   Input
