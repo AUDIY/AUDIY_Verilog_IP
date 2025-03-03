@@ -3,9 +3,9 @@
 * 
 *   Testbench for I2S_PCM_BCLK.v
 *
-* Version: 0.01
+* Version: 1.00
 * Author : AUDIY
-* Date   : 2025/03/02
+* Date   : 2025/03/04
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
