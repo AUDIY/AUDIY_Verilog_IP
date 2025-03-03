@@ -6,7 +6,7 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 |:---:|:-------------------------|:----------|
 |  1  |[I2S_PCM_BCLK.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/I2S_PCM_BCLK.v)|I2S to stereo PCM conversion module (synchronous w/ BCLK_I)|
 |  2  |[I2S_PCM_BCLK_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/I2S_PCM_BCLK_tb.sv)|Testbench for I2S_PCM_BCLK.v|
-|  3  |[PCM_1kHz_44100fs_32bit.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/PCM_1kHz_44100fs_32bit.txt)|Input data file (sine wave).|
+|  3  |[PCM_1kHz_44100fs_32bit.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/PCM_1kHz_44100fs_32bit.txt)|Input data file for simulation (sine wave).|
 |  4  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/README.md)|README file.|
 |  5  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/coverage_report.txt)|Code coverage report.|
 
