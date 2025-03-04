@@ -40,3 +40,11 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 |:-------------|:----------|
 |LENGTH|PCM data bit length (Default: 32).|
 |INPUT_REG|Input register enable. Enabled when 1'b1 (Default: 1'b1).|
+
+## Version History
+### v0.01
+- Initial Commit (2025/03/02).
+### v1.00
+- Verified on real machine. (2025/03/04)
+- Add "Version History" section. (2025/03/04)
+
