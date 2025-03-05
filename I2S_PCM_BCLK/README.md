@@ -9,7 +9,7 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 |  3  |[PCM_1kHz_44100fs_32bit.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/PCM_1kHz_44100fs_32bit.txt)|Input data file for simulation (sine wave).|
 |  4  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/README.md)|README file.|
 |  5  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/coverage_report.txt)|Code coverage report.|
-|  6  |[Timing_charts]()|Timing chart directory for README.md|
+|  6  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/I2S_PCM_BCLK/Timing_charts)|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
@@ -45,9 +45,9 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 ## Timing Chart
 ### Input: I2S
 Please refer [UM11732 I2S bus specification](https://www.nxp.com/docs/en/user-manual/UM11732.pdf) for more detail.
-
+![I2S](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/I2S.png)
 ### Output: Word clock & 2-channels (Left & Right) PCM
-
+![PCM](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/PCM.png)
 ### Sequence
 
 ## Version History
