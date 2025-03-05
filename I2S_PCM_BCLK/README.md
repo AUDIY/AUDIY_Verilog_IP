@@ -44,7 +44,7 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 
 ## Timing Chart
 ### Input: I2S
-Please refer [UM11732 I2S bus specification](https://www.nxp.com/docs/en/user-manual/UM11732.pdf) for more detail.
+Please refer [UM11732 I2S bus specification from NXP](https://www.nxp.com/docs/en/user-manual/UM11732.pdf) for more detail.
 ![I2S](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/I2S.png)
 ### Output: Word clock & 2-channels (Left & Right) PCM
 ![PCM](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/PCM.png)
