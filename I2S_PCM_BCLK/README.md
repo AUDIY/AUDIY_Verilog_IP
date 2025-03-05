@@ -49,6 +49,7 @@ Please refer [UM11732 I2S bus specification](https://www.nxp.com/docs/en/user-ma
 ### Output: Word clock & 2-channels (Left & Right) PCM
 ![PCM](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/PCM.png)
 ### Sequence
+![sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/I2S_PCM_BCLK_sequence.png)
 
 ## Version History
 ### v0.01
