@@ -4,10 +4,10 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |INTEGRATOR_FWD.v|Forward eular method integrator (w/ saturation) module|
-|  2  |INTEGRATOR_FWD_tb.sv|Testbench for INTEGRATOR_FWD.v|
-|  3  |README.md|README file.|
-|  4  |coverage_report.txt|Code coverage report.|
+|  1  |[INTEGRATOR_FWD.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/INTEGRATOR_FWD.v)|Forward eular method integrator (w/ saturation) module|
+|  2  |[INTEGRATOR_FWD_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/INTEGRATOR_FWD_tb.sv)|Testbench for INTEGRATOR_FWD.v|
+|  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/README.md)|README file.|
+|  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/coverage_report.txt)|Code coverage report.|
 
 ## Status
 |Item|Status|
