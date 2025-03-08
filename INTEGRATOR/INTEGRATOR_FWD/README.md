@@ -4,7 +4,10 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-||||
+|  1  |INTEGRATOR_FWD.v|Forward eular method integrator (w/ saturation) module|
+|  2  |INTEGRATOR_FWD_tb.sv|Testbench for INTEGRATOR_FWD.v|
+|  3  |README.md|README file.|
+|  4  |coverage_report.txt|Code coverage report.|
 
 ## Status
 |Item|Status|
