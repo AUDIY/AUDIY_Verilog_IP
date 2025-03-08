@@ -1,0 +1,22 @@
+Recursive Coverage Report Summary Data by DU
+
+=================================================================================
+=== Design Unit: work.INTEGRATOR_FWD
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+    Statements                      17        17         0   100.00%
+
+=================================================================================
+=== Design Unit: work.INTEGRATOR_FWD_tb
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       4         4         0   100.00%
+    Branches                         5         5         0   100.00%
+    Statements                      17        17         0   100.00%
+
+
+Total Coverage By Design Unit (filtered view): 100.00%
+
