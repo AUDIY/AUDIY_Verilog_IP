@@ -8,7 +8,7 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.13
+* Version: 1.10
 * Author : AUDIY
 * Date   : 2025/03/08
 * 
