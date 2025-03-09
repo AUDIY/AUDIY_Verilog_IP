@@ -8,6 +8,7 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 |  2  |[INTEGRATOR_FWD_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/INTEGRATOR_FWD_tb.sv)|Testbench for INTEGRATOR_FWD.v|
 |  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/README.md)|README file.|
 |  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/coverage_report.txt)|Code coverage report.|
+|  5  |[Timing_charts]()|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
@@ -48,3 +49,4 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 - Add README. (2025/03/08)
 ### v1.10
 - RTL simulation is finished. (2025/03/08)
+- Add timing charts. (2025/03/09)
