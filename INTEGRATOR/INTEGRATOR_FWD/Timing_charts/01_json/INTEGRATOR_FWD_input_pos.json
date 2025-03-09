@@ -1,0 +1,4 @@
+{signal: [
+  {name: 'CLK_I' , wave: 'P................'},
+  {name: 'DATA_I', wave: 'x234567892345678x'},
+]}
