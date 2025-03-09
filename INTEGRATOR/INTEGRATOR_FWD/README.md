@@ -40,6 +40,14 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 |INPUT_REG|Input register enable. Enabled when 1'b1 (Default: 1'b1).|
 
 ## Timing Chart
+### Input
+![Input_pos](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_pos.png)  
+Note: When you connect inputs to the FPGA's I/O pin, it is recommended to input the center-aligned signal.
+![Input_neg](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_neg.png)
+### Output
+![Output](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_output.png)
+### Sequence
+![Sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_sequence.png)
 ## Version History
 ### v1.02
 - Commit to this repository. (2024/12/22)
