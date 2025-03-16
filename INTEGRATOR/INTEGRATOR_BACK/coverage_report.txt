@@ -1,0 +1,15 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: INTEGRATOR_BACK.v
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         7         7         0   100.00%
+    Statements                      13        13         0   100.00%
+
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 4
+
+Total Coverage By File (code coverage only, filtered view): 100.00%
+
