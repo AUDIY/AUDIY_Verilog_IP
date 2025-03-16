@@ -8,19 +8,17 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.03
+* Version: 1.04
 * Author : AUDIY
-* Date   : 2024/12/22
+* Date   : 2025/03/16
 * 
 * Port
 *   Input
-*       MCLK_I : Master Clock Input
-*       CLK_I  : Data Clock Input
-*       DATA_I : Data Input (Width: DATA_BIT_WIDTH)
-*       NRST_I : Synchronous Reset Input (Active LOW)
+*       CLK_I     : Data Clock Input
+*       DATA_I    : Data Input (Width: DATA_BIT_WIDTH)
+*       ARESETN_I : Synchronous Reset Input (Active LOW)
 *
 *   Output
-*       CLK_O  : Data Clock Output
 *       DATA_O : Integrated Data Output
 *       OFDET_O: Overflow Detection
 *                1'b1: Overflow
@@ -30,7 +28,8 @@
 *                1'b0: Valid (NOT Underflow)
 *
 * Parameters
-*   DATA_BIT_WIDTH: Input Data Bit Width (Default: 32)
+*   LENGTH   : Input Data Bit Width (Default: 32)
+*   INPUT_REG: Input Register Enable (Default: 1'b1)
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -51,81 +50,79 @@
 
 module INTEGRATOR_BACK #(
     /* Parameter Definition */
-    parameter DATA_BIT_WIDTH = 32
+    parameter LENGTH    = 32,
+    parameter INPUT_REG = 1'b1
 )(
     /* Input Port Definition */
-    input  wire                             MCLK_I ,
-    input  wire                             CLK_I  ,
-    input  wire signed [DATA_BIT_WIDTH-1:0] DATA_I ,
-    input  wire                             NRST_I ,
+    input  wire                     CLK_I    ,
+    input  wire signed [LENGTH-1:0] DATA_I   ,
+    input  wire                     ARESETN_I,
 
     /* Output Port Definition */
-    output wire                             CLK_O  ,
-    output wire signed [DATA_BIT_WIDTH-1:0] DATA_O ,
-    output wire                             OFDET_O,
-    output wire                             UFDET_O
+    output wire signed [LENGTH-1:0] DATA_O ,
+    output wire                     OFDET_O,
+    output wire                     UFDET_O
 );
 
     /* Internal wire/reg Definition */
-    reg  CLKI_REG = 1'b0;
-    reg  CLKO_REG = 1'b0;
-    reg  signed [DATA_BIT_WIDTH-1:0] DATA_REG_POS = {(DATA_BIT_WIDTH){1'b0}};
-    reg  signed [DATA_BIT_WIDTH-1:0] DATA_REG_NEG = {(DATA_BIT_WIDTH){1'b0}};
-    reg  signed [DATA_BIT_WIDTH-1:0] DATAI_REG    = {(DATA_BIT_WIDTH){1'b0}}; 
-    wire signed [DATA_BIT_WIDTH:0] SUM_DATA;
+    reg  signed [LENGTH-1:0] ODATA_reg = {(LENGTH){1'b0}};
+    wire signed [LENGTH:0]   SUM_DATA;
 
-    assign SUM_DATA = (NRST_I == 1'b0) ? {(DATA_BIT_WIDTH+1){1'b0}} : ({DATAI_REG[DATA_BIT_WIDTH-1], DATAI_REG} + {DATA_REG_NEG[DATA_BIT_WIDTH-1], DATA_REG_NEG});
+    wire signed [LENGTH-1:0] DATA_wire;
 
-    always @(posedge MCLK_I ) begin
-        if (NRST_I == 1'b0) begin
-            CLKI_REG     <=                   1'b0;
-            CLKO_REG     <=                   1'b0;
-            DATA_REG_POS <= {(DATA_BIT_WIDTH){1'b0}};
-            DATA_REG_NEG <= {(DATA_BIT_WIDTH){1'b0}};
-            DATAI_REG    <= {(DATA_BIT_WIDTH){1'b0}};
+    assign SUM_DATA = {DATA_wire[LENGTH-1], DATA_wire} + {ODATA_reg[LENGTH-1], ODATA_reg};
+
+    generate
+        if (INPUT_REG == 1'b1) begin: blk_ireg1
+            reg signed [LENGTH - 1:0] DATAI_reg = {(LENGTH){1'b0}};
+
+            always @(posedge CLK_I or negedge ARESETN_I ) begin
+                if (ARESETN_I == 1'b0) begin
+                    DATAI_reg <= {(LENGTH){1'b0}};
+                end else begin
+                    DATAI_reg <= DATA_I;
+                end
+            end
+
+            assign DATA_wire = DATAI_reg;
+        end else begin: blk_ireg0
+            assign DATA_wire = DATA_I;
+        end    
+    endgenerate
+
+    always @(posedge CLK_I or negedge ARESETN_I) begin
+        if (ARESETN_I == 1'b0) begin
+            /* Reset */
+            ODATA_reg <= {(LENGTH){1'b0}};
         end else begin
-            CLKI_REG <= CLK_I;
-
-            /* Positive Edge of Data Clk (CLK_I) */
-            if ((CLKI_REG == 1'b0) && (CLK_I == 1'b1)) begin
-                CLKO_REG     <= CLK_I ;
-                DATA_REG_POS <= DATA_O;
-            end
-
-            /* Negative Edge of Data Clock (CLK_I) */
-            if ((CLKI_REG == 1'b1) && (CLK_I == 1'b0)) begin
-                CLKO_REG     <= CLK_I       ;
-                DATAI_REG    <= DATA_I      ;
-                DATA_REG_NEG <= DATA_REG_POS;
-            end
+            ODATA_reg <= DATA_O;
         end
     end
 
     /* Assign Output */
     assign {UFDET_O, OFDET_O, DATA_O} = assign_out(SUM_DATA);
-    assign CLK_O = CLKO_REG;
 
     /* Saturation process */
     // Output: {UFDET_O, OFDET_O, DATA_O}
-    function [DATA_BIT_WIDTH+1:0] assign_out;
-        input [DATA_BIT_WIDTH:0] SUMDATA;
+    function [LENGTH+1:0] assign_out;
+        input [LENGTH:0] SUMDATA;
     begin
-        case (SUMDATA[DATA_BIT_WIDTH:DATA_BIT_WIDTH-1])
+        case (SUMDATA[LENGTH:LENGTH-1])
             2'b01: begin
                 // Overflow
                 // Ex. 5'b01111 + 5'b00001 = 5'b01111 (6'b010000)
-                assign_out = {1'b0, 1'b1, 1'b0, {(DATA_BIT_WIDTH-1){1'b1}}};
+                assign_out = {1'b0, 1'b1, 1'b0, {(LENGTH-1){1'b1}}};
             end
 
             2'b10: begin
                 // Underflow
                 // Ex. 5'b10000 + 5'b11110 = 5'b10000 (6'b101111)
-                assign_out = {1'b1, 1'b0, 1'b1, {(DATA_BIT_WIDTH-1){1'b0}}};
+                assign_out = {1'b1, 1'b0, 1'b1, {(LENGTH-1){1'b0}}};
             end 
 
             default: begin
                 // Normal Operation
-                assign_out = {1'b0, 1'b0, SUMDATA[DATA_BIT_WIDTH], SUMDATA[DATA_BIT_WIDTH-2:0]};
+                assign_out = {1'b0, 1'b0, SUMDATA[LENGTH], SUMDATA[LENGTH-2:0]};
             end 
         endcase
     end  
