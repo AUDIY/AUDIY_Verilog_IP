@@ -4,8 +4,8 @@ Back Eular Method Integrator (w/ Saturation) Module.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |[INTEGRATOR_FWD.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/INTEGRATOR_BACK.v)|Back eular method integrator (w/ saturation) module|
-|  2  |[INTEGRATOR_FWD_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/INTEGRATOR_BACK_tb.sv)|Testbench for INTEGRATOR_BACK.v|
+|  1  |[INTEGRATOR_BACK.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/INTEGRATOR_BACK.v)|Back eular method integrator (w/ saturation) module|
+|  2  |[INTEGRATOR_BACK_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/INTEGRATOR_BACK_tb.sv)|Testbench for INTEGRATOR_BACK.v|
 |  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/README.md)|README file.|
 |  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_BACK/coverage_report.txt)|Code coverage report.|
 |  5  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/INTEGRATOR/INTEGRATOR_BACK/Timing_charts)|Timing chart directory for README.md|
