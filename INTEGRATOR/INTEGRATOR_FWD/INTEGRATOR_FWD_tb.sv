@@ -3,9 +3,9 @@
 *
 * Test bench for INTEGRATOR_FWD.v
 *
-* Version: 1.10
+* Version: 2.00
 * Author : AUDIY
-* Date   : 2025/03/08
+* Date   : 2025/03/17
 * 
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
