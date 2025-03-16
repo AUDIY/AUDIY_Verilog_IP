@@ -13,10 +13,15 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 ## Status
 |Item|Status|
 |:------|:---------|
-|Version|1.10|
-|Date   |2025/03/08|
+|Version|2.00|
+|Date   |2025/03/17|
 |Simulated|Yes|
-|Real Machine Checked|Not yet|
+|Real Machine Checked|Yes|
+
+## Verified Devices
+|No.|FPGA Vendor|Device|Board|
+|:-:|:----------|:-----|:----|
+| 1 |AMD|[Spartan-7 XC7S25-1CSGA225C](https://www.amd.com/ja/products/adaptive-socs-and-fpgas/fpga/spartan-7.html)|[Digilent Cmod S7](https://digilent.com/reference/programmable-logic/cmod-s7/start)|
 
 ## Port Definition
 ### Input
@@ -58,3 +63,6 @@ Note: When you connect inputs to the FPGA's I/O pin, it is recommended to input 
 ### v1.10
 - RTL simulation is finished. (2025/03/08)
 - Add timing charts. (2025/03/09)
+### v2.00
+- Checked on real machine. (2025/03/17)
+- Add "Verified Devices" section in README. (2025/03/17)
