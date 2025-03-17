@@ -18,6 +18,11 @@ Back Eular Method Integrator (w/ Saturation) Module.
 |Simulated|Yes|
 |Real Machine Checked|Not yet|
 
+## Verified Devices
+|No.|FPGA Vendor|Device|Board|
+|:-:|:----------|:-----|:----|
+| 1 ||||
+
 ## Port Definition
 ### Input
 |Port name|Description|
@@ -36,7 +41,7 @@ Back Eular Method Integrator (w/ Saturation) Module.
 ## Parameters
 |Parameter name|Description|
 |:-------------|:----------|
-|LENGTH|PCM data bit length (Default: 32).|
+|LENGTH|Data bit length (Default: 32).|
 |INPUT_REG|Input register enable. Enabled when 1'b1 (Default: 1'b1).|
 
 ## Timing Chart
