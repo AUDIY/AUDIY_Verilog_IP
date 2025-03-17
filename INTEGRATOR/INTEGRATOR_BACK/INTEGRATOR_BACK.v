@@ -8,9 +8,9 @@
 * ------------ or -------
 *  1 - z^(-1)      z - 1 
 *
-* Version: 1.10
+* Version: 2.00
 * Author : AUDIY
-* Date   : 2025/03/16
+* Date   : 2025/03/17
 * 
 * Port
 *   Input
