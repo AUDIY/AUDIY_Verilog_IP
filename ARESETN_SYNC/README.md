@@ -44,6 +44,7 @@ Asynchronous Reset (Active LOW) Synchronizer Module.
 ### Input
 ### Output
 ### Sequence
+![Sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/Timing_charts/02_png/ARESETN_SYNC_sequence.png)
 
 ## Version History
 ### v1.01
@@ -51,3 +52,4 @@ Asynchronous Reset (Active LOW) Synchronizer Module.
 ### v1.02
 - Change moddule name from "NRST_SYNCHRONIZER" to "ARESETN_SYNC" (2025/03/23).
 - Change testbench from Verilog to SystemVerilog (2025/03/23).
+- Add sequence chart (2025/03/23).
