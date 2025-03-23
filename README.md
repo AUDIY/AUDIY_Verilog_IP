@@ -12,8 +12,8 @@ Code reviews are welcome!
 - [Memory](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/Memory)  
   Memory code examples.  
   *Note*: It is recommended to use vendor original ROM/RAM IP.  
-- [NRST_SYNCHRONIZER](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/NRST_SYNCHRONIZER)  
-  Asynchronous Reset Synchronizer.
+- [ARESETN_SYNC](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/ARESETN_SYNC)  
+  Asynchronous Reset (Active LOW) Synchronizer.
 - [\_\_Legacy\_\_](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__)  
   Modules no longer maintained.
 
