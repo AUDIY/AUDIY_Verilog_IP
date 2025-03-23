@@ -18,7 +18,7 @@ Code reviews are welcome!
   Modules no longer maintained.
 
 ## Legacy Modules List
-- [I2S_PCM_MCLK](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__/I2S_MCLK)  
+- [I2S_MCLK](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__/I2S_MCLK)  
   I2S to stereo PCM converter (synchronous w/ Master clock).  
   I2S must be synchronized w/ MCLK by synchronizer. So it is NOT recommended.  
 
