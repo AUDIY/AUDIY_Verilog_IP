@@ -5,7 +5,7 @@ Asynchronous Reset Synchronizer Module.
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
 |  1  |[NRST_SYNCHRONIZER.v]()|Back eular method integrator (w/ saturation) module|
-|  2  |[NRST_SYNCHRONIZER_tb.sv]()|Testbench for NRST_SYNCHRONIZER.v|
+|  2  |[NRST_SYNCHRONIZER_tb.v]()|Testbench for NRST_SYNCHRONIZER.v|
 |  3  |[README.md]()|README file.|
 |  4  |[coverage_report.txt]()|Code coverage report.|
 |  5  |[Timing_charts]()|Timing chart directory for README.md|
