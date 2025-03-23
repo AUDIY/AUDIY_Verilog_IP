@@ -8,7 +8,7 @@ Asynchronous Reset (Active LOW) Synchronizer Module.
 |  2  |[ARESETN_SYNC_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/ARESETN_SYNC_tb.sv)|Testbench for ARESETN_SYNC.v|
 |  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/README.md)|README file.|
 |  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/coverage_report.txt)|Code coverage report.|
-|  5  |[Timing_charts]()|Timing chart directory for README.md|
+|  5  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/ARESETN_SYNC/Timing_charts)|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
