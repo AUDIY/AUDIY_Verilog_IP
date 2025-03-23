@@ -1,5 +1,5 @@
 # ARESETN_SYNC
-Asynchronous Reset Synchronizer Module.
+Asynchronous Reset (Active LOW) Synchronizer Module.
 
 ## File List
 | No. |File name|Description|
