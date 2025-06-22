@@ -14,6 +14,8 @@ Code reviews are welcome!
   *Note*: It is recommended to use vendor original ROM/RAM IP.  
 - [ARESETN_SYNC](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/ARESETN_SYNC)  
   Asynchronous Reset (Active LOW) Synchronizer.
+- [PCM_MCLK_SYNC](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/ARESETN_SYNC)
+  PCM Data Synchronizer w/ MCLK.
 - [\_\_Legacy\_\_](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__)  
   Modules no longer maintained.
 
