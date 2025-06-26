@@ -14,10 +14,16 @@ PCM Data Synchronizer w/ MCLK.
 ## Status
 |Item|Status|
 |:------|:---------|
-|Version|0.10|
-|Date   |2025/06/22|
+|Version|1.00|
+|Date   |2025/06/26|
 |Simulated|Yes|
-|Real Machine Checked|Not Yet|
+|Real Machine Checked|Yes|
+
+## Verified Devices
+|No.|FPGA Vendor|Device|Board|
+|:-:|:----------|:-----|:----|
+|1|Altera|Cyclone 10 LP 10CL025YU256I7G|[EK-10CL025U256](https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/cyclone/10-lp-evaluation-kit.html)|
+|2|Altera|Cyclone IV E EP4CE22F17C6N|[DE0-Nano](https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=593)|
 
 ## Port Definition
 ### Input
