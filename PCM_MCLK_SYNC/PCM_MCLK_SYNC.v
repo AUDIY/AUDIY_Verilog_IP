@@ -3,9 +3,9 @@
 *
 * PCM Data Synchronizer w/ MCLK.
 *
-* Version: 0.10
+* Version: 1.00
 * Author : AUDIY
-* Date   : 2025/06/22
+* Date   : 2025/06/26
 *
 * Port
 *   Input
