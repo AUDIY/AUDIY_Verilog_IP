@@ -3,9 +3,9 @@
 *
 * Testbench for PCM_MCLK_SYNC.v
 *
-* Version: 0.10
+* Version: 1.00
 * Author : AUDIY
-* Date   : 2025/06/22
+* Date   : 2025/06/26
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
