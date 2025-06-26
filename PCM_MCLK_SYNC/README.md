@@ -4,11 +4,12 @@ PCM Data Synchronizer w/ MCLK.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |[PCM_MCLK_SYNC.v]()|PCM Data Synchronizer w/ MCLK.|
-|  2  |[PCM_MCLK_SYNV_tb.sv]()|Testbench for PCM_MCLK_SYNC.v|
-|  3  |[PCM_1kHz_44100fs_32bit.txt]()|Input data file for simulation (sine wave).|
-|  4  |[README.md]()|README file.|
-|  5  |[coverage_report.txt]()|Code coverage report.|
+|  1  |[PCM_MCLK_SYNC.v](./PCM_MCLK_SYNC.v)|PCM Data Synchronizer w/ MCLK.|
+|  2  |[PCM_MCLK_SYNV_tb.sv](./PCM_MCLK_SYNV_tb.sv)|Testbench for PCM_MCLK_SYNC.v|
+|  3  |[PCM_1kHz_44100fs_32bit.txt](./PCM_1kHz_44100fs_32bit.txt)|Input data file for simulation (sine wave).|
+|  4  |[README.md](./README.md)|README file.|
+|  5  |[coverage_report.txt](./coverage_report.txt)|Code coverage report.|
+|  6  |[Timing_charts](./Timing_charts)|Timing chart directory for README.md|
 
 
 ## Status
@@ -49,6 +50,9 @@ PCM Data Synchronizer w/ MCLK.
 
 ## Timing Chart
 ![Sequence](./Timing_charts/02_png/PCM_MCLK_SYNC_sequence.png)
+
+## Note
+This module requires the synchronization of WCLK_I and MCLK_I, but does not need a specific phase relation between WCLK_I and MCLK_I.
 
 ## Version History
 ### v0.10
