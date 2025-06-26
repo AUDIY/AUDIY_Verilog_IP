@@ -48,8 +48,10 @@ PCM Data Synchronizer w/ MCLK.
 |DATA_WIDTH|PCM data bit length (Default: 32).|
 
 ## Timing Chart
-To be determined
+![Sequence](./Timing_charts/02_png/PCM_MCLK_SYNC_sequence.png)
 
 ## Version History
 ### v0.10
 - Initial Commit (2025/06/22).
+### v1.00
+- Real machine checked (2025/06/26).
