@@ -43,7 +43,7 @@ Single clock Simple Dual Port RAM (for Infering)
 ## Parameters
 |Parameter name|Description|
 |:-------------|:----------|
-|DATA_WIDTH|PCM data bit length (Default: 8).|
+|DATA_WIDTH|Data bit length (Default: 8).|
 |ADDR_WIDTH|ROM Address Width (Default: 9).|
 |OUTPUT_REG|Output Register Enable (Default:"TRUE").|
 |RAM_INIT_FILE|RAM Initialization File (Default: "RAMINIT.hex").|
