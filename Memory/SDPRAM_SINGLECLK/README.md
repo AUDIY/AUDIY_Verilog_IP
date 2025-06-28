@@ -6,7 +6,7 @@ Single clock Simple Dual Port RAM (for Infering)
 |:---:|:-------------------------|:----------|
 |  1  |[SDPRAM_SINGLECLK.v](./SDPRAM_SINGLECLK.v)|Single clock Simple Dual Port RAM (for Infering)|
 |  2  |[SDPRAM_SINGLECLK_tb.sv](./SDPRAM_SINGLECLK_tb.sv)|Testbench for SDPRAM_SINGLECLK.v|
-|  3  |[ram_init_file.mem](./ram_init_file.mem)|RAM Initialization file (All zero).|
+|  3  |[ram_init_file.mem](./ram_init_file.mem)|RAM Initialization file for simulation.|
 |  4  |[README.md](./README.md)|README file.|
 
 ## Status
