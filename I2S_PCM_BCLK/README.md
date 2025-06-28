@@ -19,6 +19,15 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 |Simulated|Yes|
 |Real Machine Checked|Yes|
 
+## Verified Devices
+|No.|FPGA Vendor|Device|Board|
+|:-:|:----------|:-----|:----|
+|1|Altera|Cyclone 10 LP 10CL025YU256I7G|[EK-10CL025U256](https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/cyclone/10-lp-evaluation-kit.html)|
+|2|Altera|Cyclone IV E EP4CE22F17C6N|[DE0-Nano](https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=593)|
+|3|Altera|MAX 10 10M50DAF484C7G|[DE10-Lite](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021)|
+|4|AMD|Artix 7 XC7A35T-1CPG236C|[Cmod A7](https://digilent.com/reference/programmable-logic/cmod-a7/start)|
+|5|AMD|Spartan 7 XC7S25-1CSGA225C|[Cmod S7](https://digilent.com/reference/programmable-logic/cmod-s7/start)|
+
 ## Port Definition
 ### Input
 |Port name|Description|
