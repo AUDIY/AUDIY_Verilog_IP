@@ -16,7 +16,7 @@ Code reviews are welcome!
   Asynchronous Reset (Active LOW) Synchronizer.
 - [PCM_MCLK_SYNC](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/PCM_MCLK_SYNC)  
   PCM Data Synchronizer w/ MCLK.
-- [PCM_I2S_MCLK](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/PCM_I2S_MCLK)
+- [PCM_I2S_MCLK](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/PCM_I2S_MCLK)  
   Stereo PCM to I2S conversion module (synchronous w/ MCLK_I).
 - [\_\_Legacy\_\_](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__)  
   Modules no longer maintained.
