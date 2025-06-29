@@ -1,0 +1,14 @@
+Coverage Report Summary Data by DU
+
+=================================================================================
+=== Design Unit: work.PCM_I2S_MCLK
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        25        25         0   100.00%
+    Conditions                      16        16         0   100.00%
+    Statements                      27        27         0   100.00%
+
+
+Total Coverage By Design Unit (filtered view): 100.00%
+
