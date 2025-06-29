@@ -3,9 +3,9 @@
 *
 * Testbench for PCM_I2S_MCLK.v
 *
-* Version: 0.10
+* Version: 1.00
 * Author : AUDIY
-* Date   : 2025/06/26
+* Date   : 2025/06/29
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
