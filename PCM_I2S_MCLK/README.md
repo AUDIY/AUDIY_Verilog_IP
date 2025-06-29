@@ -13,8 +13,8 @@ Stereo PCM to I2S conversion module (synchronous w/ MCLK_I)
 ## Status
 |Item|Status|
 |:------|:---------|
-|Version|0.10|
-|Date   |2025/06/26|
+|Version|1.00|
+|Date   |2025/06/29|
 |Simulated|Yes|
 |Real Machine Checked|Yes|
 
@@ -54,3 +54,5 @@ To be determined
 ## Version History
 ### v0.10
 - Initial Commit (2025/06/26).
+### v1.00
+- Real Machine Checked (2025/06/28).
