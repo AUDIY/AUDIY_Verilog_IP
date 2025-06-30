@@ -4,11 +4,11 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |[INTEGRATOR_FWD.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/INTEGRATOR_FWD.v)|Forward eular method integrator (w/ saturation) module|
-|  2  |[INTEGRATOR_FWD_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/INTEGRATOR_FWD_tb.sv)|Testbench for INTEGRATOR_FWD.v|
-|  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/README.md)|README file.|
-|  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/coverage_report.txt)|Code coverage report.|
-|  5  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts)|Timing chart directory for README.md|
+|  1  |[INTEGRATOR_FWD.v](./INTEGRATOR_FWD.v)|Forward eular method integrator (w/ saturation) module|
+|  2  |[INTEGRATOR_FWD_tb.sv](./INTEGRATOR_FWD_tb.sv)|Testbench for INTEGRATOR_FWD.v|
+|  3  |[README.md](./README.md)|README file.|
+|  4  |[coverage_report.txt](./coverage_report.txt)|Code coverage report.|
+|  5  |[Timing_charts](./Timing_charts)|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
@@ -46,13 +46,13 @@ Forward Eular Method Integrator (w/ Saturation) Module.
 
 ## Timing Chart
 ### Input
-![Input_pos](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_pos.png)  
+![Input_pos](./Timing_charts/02_png/INTEGRATOR_FWD_input_pos.png)  
 Note: When you connect inputs to the FPGA's I/O pin, it is recommended to input the center-aligned signal.
-![Input_neg](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_neg.png)
+![Input_neg](./Timing_charts/02_png/INTEGRATOR_FWD_input_neg.png)
 ### Output
-![Output](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_output.png)
+![Output](./Timing_charts/02_png/INTEGRATOR_FWD_output.png)
 ### Sequence
-![Sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/INTEGRATOR/INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_sequence.png)
+![Sequence](./Timing_charts/02_png/INTEGRATOR_FWD_sequence.png)
 ## Version History
 ### v1.02
 - Commit to this repository. (2024/12/22)

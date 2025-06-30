@@ -4,12 +4,12 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |[I2S_PCM_BCLK.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/I2S_PCM_BCLK.v)|I2S to stereo PCM conversion module (synchronous w/ BCLK_I)|
-|  2  |[I2S_PCM_BCLK_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/I2S_PCM_BCLK_tb.sv)|Testbench for I2S_PCM_BCLK.v|
-|  3  |[PCM_1kHz_44100fs_32bit.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/PCM_1kHz_44100fs_32bit.txt)|Input data file for simulation (sine wave).|
-|  4  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/README.md)|README file.|
-|  5  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/coverage_report.txt)|Code coverage report.|
-|  6  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/I2S_PCM_BCLK/Timing_charts)|Timing chart directory for README.md|
+|  1  |[I2S_PCM_BCLK.v](./I2S_PCM_BCLK.v)|I2S to stereo PCM conversion module (synchronous w/ BCLK_I)|
+|  2  |[I2S_PCM_BCLK_tb.sv](./I2S_PCM_BCLK_tb.sv)|Testbench for I2S_PCM_BCLK.v|
+|  3  |[PCM_1kHz_44100fs_32bit.txt](./PCM_1kHz_44100fs_32bit.txt)|Input data file for simulation (sine wave).|
+|  4  |[README.md](./README.md)|README file.|
+|  5  |[coverage_report.txt](./coverage_report.txt)|Code coverage report.|
+|  6  |[Timing_charts](./Timing_charts)|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
@@ -27,6 +27,7 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 |3|Altera|MAX 10 10M50DAF484C7G|[DE10-Lite](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021)|
 |4|AMD|Artix 7 XC7A35T-1CPG236C|[Cmod A7](https://digilent.com/reference/programmable-logic/cmod-a7/start)|
 |5|AMD|Spartan 7 XC7S25-1CSGA225C|[Cmod S7](https://digilent.com/reference/programmable-logic/cmod-s7/start)|
+|6|Efinix|Trion T20F256I4|[T20 BGA256 Development Kit](https://www.efinixinc.com/products-devkits-triont20.html)|
 
 ## Port Definition
 ### Input
@@ -54,12 +55,12 @@ I2S to stereo PCM conversion module (synchronous w/ BCLK_I)
 ## Timing Chart
 ### Input: I2S
 Please refer [UM11732 I2S bus specification from NXP](https://www.nxp.com/docs/en/user-manual/UM11732.pdf) for more detail.
-![I2S](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/I2S.png)
+![I2S](./Timing_charts/02_png/I2S.png)
 ### Output: Word clock & 2-channels (Left & Right) PCM
-![PCM](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/PCM.png)
+![PCM](./Timing_charts/02_png/PCM.png)
 ### Sequence
-![sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/I2S_PCM_BCLK_sequence.png)
-![Questa](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/I2S_PCM_BCLK/Timing_charts/02_png/Questa.png)
+![sequence](./Timing_charts/02_png/I2S_PCM_BCLK_sequence.png)
+![Questa](./Timing_charts/02_png/Questa.png)
 
 ## Version History
 ### v0.01

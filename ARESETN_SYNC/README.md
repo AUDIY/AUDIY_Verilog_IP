@@ -4,11 +4,11 @@ Asynchronous Reset (Active LOW) Synchronizer Module.
 ## File List
 | No. |File name|Description|
 |:---:|:-------------------------|:----------|
-|  1  |[ARESETN_SYNC.v](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/ARESETN_SYNC.v)|Asynchronous reset synchronizer module|
-|  2  |[ARESETN_SYNC_tb.sv](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/ARESETN_SYNC_tb.sv)|Testbench for ARESETN_SYNC.v|
-|  3  |[README.md](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/README.md)|README file.|
-|  4  |[coverage_report.txt](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/coverage_report.txt)|Code coverage report.|
-|  5  |[Timing_charts](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/ARESETN_SYNC/Timing_charts)|Timing chart directory for README.md|
+|  1  |[ARESETN_SYNC.v](./ARESETN_SYNC.v)|Asynchronous reset synchronizer module|
+|  2  |[ARESETN_SYNC_tb.sv](./ARESETN_SYNC_tb.sv)|Testbench for ARESETN_SYNC.v|
+|  3  |[README.md](./README.md)|README file.|
+|  4  |[coverage_report.txt](./coverage_report.txt)|Code coverage report.|
+|  5  |[Timing_charts](./Timing_charts)|Timing chart directory for README.md|
 
 ## Status
 |Item|Status|
@@ -24,6 +24,7 @@ Asynchronous Reset (Active LOW) Synchronizer Module.
 |1|Altera|Cyclone 10 LP 10CL025YU256I7G|[EK-10CL025U256](https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/cyclone/10-lp-evaluation-kit.html)|
 |2|Altera|Cyclone IV E EP4CE22F17C6N|[DE0-Nano](https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=593)|
 |3|Altera|MAX 10 10M50DAF484C7G|[DE10-Lite](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021)|
+|4|Efinix|Trion T20F256I4|[T20 BGA256 Development Kit](https://www.efinixinc.com/products-devkits-triont20.html)|
 
 ## Port Definition
 ### Input
@@ -48,7 +49,7 @@ N/A
 ### Output
 N/A
 ### Sequence
-![Sequence](https://github.com/AUDIY/AUDIY_Verilog_IP/blob/main/ARESETN_SYNC/Timing_charts/02_png/ARESETN_SYNC_sequence.png)
+![Sequence](./Timing_charts/02_png/ARESETN_SYNC_sequence.png)
 
 ## Version History
 ### v1.01
