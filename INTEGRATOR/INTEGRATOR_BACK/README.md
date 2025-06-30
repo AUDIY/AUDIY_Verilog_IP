@@ -46,11 +46,11 @@ Back Eular Method Integrator (w/ Saturation) Module.
 
 ## Timing Chart
 ### Input
-![Input_pos](./Timing_charts/02_png/INTEGRATOR_FWD_input_pos.png)  
+![Input_pos](../INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_pos.png)  
 Note: When you connect inputs to the FPGA's I/O pin, it is recommended to input the center-aligned signal.
-![Input_neg](./Timing_charts/02_png/INTEGRATOR_FWD_input_neg.png)
+![Input_neg](../INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_input_neg.png)
 ### Output
-![Output](./Timing_charts/02_png/INTEGRATOR_FWD_output.png)
+![Output](../INTEGRATOR_FWD/Timing_charts/02_png/INTEGRATOR_FWD_output.png)
 ### Sequence
 ![Sequence](./Timing_charts/02_png/INTEGRATOR_BACK_sequence.png)
 ## Version History
