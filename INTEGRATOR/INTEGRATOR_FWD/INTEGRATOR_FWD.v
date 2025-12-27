@@ -33,7 +33,7 @@
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
-| Copyright AUDIY 2024 - 2025.                                                 |
+| Copyright AUDIY 2024 - 2026.                                                 |
 |                                                                              |
 | This source describes Open Hardware and is licensed under the CERN-OHL-P v2. |
 |                                                                              |
@@ -133,3 +133,4 @@ module INTEGRATOR_FWD #(
 endmodule
 
 `default_nettype wire
+
