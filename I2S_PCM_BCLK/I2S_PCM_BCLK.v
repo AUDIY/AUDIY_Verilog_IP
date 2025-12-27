@@ -26,7 +26,7 @@
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
-| Copyright AUDIY 2025.                                                        |
+| Copyright AUDIY 2025 - 2026.                                                 |
 |                                                                              |
 | This source describes Open Hardware and is licensed under the CERN-OHL-P v2. |
 |                                                                              |
@@ -168,3 +168,4 @@ module I2S_PCM_BCLK #(
 endmodule
 
 `default_nettype wire
+
