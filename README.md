@@ -27,7 +27,7 @@ Code reviews are welcome!
   I2S must be synchronized w/ MCLK by synchronizer. So it is NOT recommended.  
 
 ## License under CERN-OHL-P v2
-Copyright AUDIY 2023 - 2025.
+Copyright AUDIY 2023 - 2026.
 
 This source describes Open Hardware and is licensed under the CERN-OHL-P v2.
 
