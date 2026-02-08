@@ -24,6 +24,9 @@ Single clock Simple Dual Port RAM (for Infering)
 |2|Altera|Cyclone IV E EP4CE22F17C6N|[DE0-Nano](https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=593)|
 |3|Altera|MAX 10 10M50DAF484C7G|[DE10-Lite](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=234&No=1021)|
 |4|Efinix|Trion T20F256I4|[T20 BGA256 Development Kit](https://www.efinixinc.com/products-devkits-triont20.html)|
+|5|AMD|Artix-7 XC7A35T-1CPG236C|[Digilent Cmod A7](https://digilent.com/reference/programmable-logic/cmod-a7/start)|
+|6|AMD|Spartan-7 XC7S25-1CSGA225C|[Digilent Cmod S7](https://digilent.com/reference/programmable-logic/cmod-s7/start)|
+|7|Gowin|Arora GW2A-LV18PG256C8/I7|[Sipeed Tang Primer 20K + Dock](https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html#Dock-ext-board-appearance)|
 
 ## Port Definition
 ### Input
@@ -55,3 +58,4 @@ To be determined.
 ## Version History
 ### v1.00
 - Real machine checked (2025/06/26).
+- Add verified devices (2026/06/28).
