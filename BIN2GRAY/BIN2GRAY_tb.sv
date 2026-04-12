@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------
 * BIN2GRAY_tb.sv
 *
-* Testbench of 
+* Testbench of BIN2GRAY.v
 *
 * Version: 0.01
 * Author : AUDIY
@@ -72,7 +72,7 @@ module BIN2GRAY_tb ();
         sva_change_onehot: assert property (
             @(posedge CLK) (COUNT > 0) |-> $onehot(GRAY_O ^ $past(GRAY_O))
         );
-    `endif
+    `endif /* SVA */
     
 endmodule
 
