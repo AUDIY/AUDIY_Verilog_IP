@@ -20,6 +20,8 @@ Code reviews are welcome!
   Stereo PCM to I2S conversion module (synchronous w/ MCLK_I).
 - [BIN2GRAY](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/BIN2GRAY)  
   Binary to Gray code Encoder.
+- [GRAY2BIN](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/GRAY2BIN)  
+  Gray code to Binary Decoder.
 - [\_\_Legacy\_\_](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__)  
   Modules no longer maintained.
 
