@@ -1,0 +1,16 @@
+Coverage Report Summary Data by file
+
+=================================================================================
+=== File: GRAY2BIN.v
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      2         2         0   100.00%
+    Statements                       1         1         0   100.00%
+    Toggles                         16        16         0   100.00%
+
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 1
+
+Total Coverage By File (code coverage only, filtered view): 100.00%
+
