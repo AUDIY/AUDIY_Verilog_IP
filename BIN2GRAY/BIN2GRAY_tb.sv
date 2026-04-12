@@ -3,7 +3,7 @@
 *
 * Testbench of BIN2GRAY.v
 *
-* Version: 0.01
+* Version: 0.10
 * Author : AUDIY
 * Date   : 2026/04/12
 *
