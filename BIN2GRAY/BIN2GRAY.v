@@ -41,7 +41,7 @@ module BIN2GRAY #(
     output wire [(BIN_WIDTH-1):0] GRAY_O
 );
 
-    assign GRAY_O = BIN_I ^ {1'b0, BIN_I[(BIN_WIDTH-1):1]};
+    assign GRAY_O = BIN_I ^ {1'b0, BIN_I[(BIN_WIDTH - 1):1]};
     
 endmodule
 
