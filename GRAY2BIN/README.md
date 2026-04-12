@@ -1,10 +1,10 @@
 # GRAY2BIN
-Gray code to Binary Encoder
+Gray code to Binary Decoder
 
 ## File List
 | No. |File Name                                                     |Description                |
 |:---:|:-------------------------------------------------------------|:--------------------------|
-|  1  |[GRAY2BIN.v](./GRAY2BIN.v)                                    |Gray code to Binary Encoder|
+|  1  |[GRAY2BIN.v](./GRAY2BIN.v)                                    |Gray code to Binary Decoder|
 |  2  |[GRAY2BIN_tb.sv](./GRAY2BIN_tb.sv)                            |Testbench for GRAY2BIN.v   |
 |  3  |[README.md](./README.md)                                      |README file.               |
 |  4  |[GRAY2BIN_coverage_report.txt](./GRAY2BIN_coverage_report.txt)|Code coverage report.      |
