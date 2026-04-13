@@ -23,7 +23,7 @@
 * Parameter
 *       DATA_WIDTH : Data width (Default: 32)
 *
-* License
+* License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
 | Copyright AUDIY 2025 - 2026.                                                 |
 |                                                                              |
