@@ -17,7 +17,7 @@
 * Parameter
 *       BIN_WIDTH: Binary data width
 *
-* License
+* License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
 | Copyright AUDIY 2026.                                                        |
 |                                                                              |
