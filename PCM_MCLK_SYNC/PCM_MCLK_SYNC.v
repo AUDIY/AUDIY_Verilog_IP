@@ -27,20 +27,14 @@
 --------------------------------------------------------------------------------
 | Copyright AUDIY 2025 - 2026.                                                 |
 |                                                                              |
-| This source describes Open Hardware and is licensed under the CERN-OHL-W v2. |
+| This source describes Open Hardware and is licensed under the CERN-OHL-P v2. |
 |                                                                              |
 | You may redistribute and modify this source and make products using it under |
-| the terms of the CERN-OHL-W v2 (https:/cern.ch/cern-ohl).                    |
+| the terms of the CERN-OHL-P v2 (https://cern.ch/cern-ohl).                   |
 |                                                                              |
 | This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,          |
 | INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A         |
-| PARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions.  |
-|                                                                              |
-| Source location: https://github.com/AUDIY/FIR_x2                             |
-|                                                                              |
-| As per CERN-OHL-W v2 section 4.1, should You produce hardware based on these |
-| sources, You must maintain the Source Location visible on the external case  |
-| of the FIR_x2 or other products you make using this source.                  |
+| PARTICULAR PURPOSE. Please see the CERN-OHL-P v2 for applicable conditions.  |
 --------------------------------------------------------------------------------
 *
 -----------------------------------------------------------------------------*/
