@@ -7,7 +7,7 @@
 * Author : AUDIY
 * Date   : 2026/04/12
 *
-* License
+* License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
 | Copyright AUDIY 2026.                                                        |
 |                                                                              |
