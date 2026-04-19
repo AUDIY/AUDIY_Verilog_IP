@@ -22,6 +22,8 @@ Code reviews are welcome!
   Binary to Gray code Encoder.
 - [GRAY2BIN](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/GRAY2BIN)  
   Gray code to Binary Decoder.
+- [DFF_SYNC](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/DFF_SYNC)  
+  Asynchronous 1bit signal synchronizer.
 - [\_\_Legacy\_\_](https://github.com/AUDIY/AUDIY_Verilog_IP/tree/main/__Legacy__)  
   Modules no longer maintained.
 
