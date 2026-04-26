@@ -3,9 +3,9 @@
 *
 * Testbench for DFF_SYNC.v
 *
-* Version: 0.10
+* Version: 0.20
 * Author : AUDIY
-* Date   : 2026/04/19
+* Date   : 2026/04/26
 *
 * License
 --------------------------------------------------------------------------------
@@ -28,18 +28,20 @@ module DFF_SYNC_tb ();
 
     timeunit 1ns / 1ps;
 
-    localparam INCLK_CYC = 4;
+    localparam INCLK_CYC  = 4;
     localparam OUTCLK_CYC = 4;
 
+    localparam BIT_WIDTH = 4;
     localparam OUT_STAGE = 2;
 
-    reg  INCLK_I  = 1'b0;
-    reg  DATA_I   = 1'b0;
-    reg  OUTCLK_I = 1'b0;
-    wire DATA_O;
+    reg  INCLK_I                    = 1'b0;
+    reg  [(BIT_WIDTH - 1):0] DATA_I = '0;
+    reg  OUTCLK_I                   = 1'b0;
+    wire [(BIT_WIDTH - 1):0] DATA_O;
 
     /* Instantiation */
     DFF_SYNC #(
+        .BIT_WIDTH(BIT_WIDTH),
         .OUT_STAGE(OUT_STAGE)
     ) dut (
         .INCLK_I (INCLK_I ),
@@ -74,7 +76,7 @@ module DFF_SYNC_tb ();
 
     /* Generate random DATA_I */
     always @(posedge INCLK_I) begin
-        DATA_I <= $urandom_range(0, 1);
+        DATA_I <= $urandom_range(0, 2 ** (BIT_WIDTH) - 1);
     end
     
 endmodule

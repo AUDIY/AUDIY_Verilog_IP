@@ -1,10 +1,10 @@
 # DFF_SYNC
-Asynchronous 1bit signal Synchronizer Module.
+Asynchronous signal Synchronizer Module.
 
 ## File List
 | No. |File name                                   |Description                            |
 |:---:|:-------------------------------------------|:--------------------------------------|
-|  1  |[DFF_SYNC.v](./DFF_SYNC.v)                  |Asynchronous 1bit signal synchronizer  |
+|  1  |[DFF_SYNC.v](./DFF_SYNC.v)                  |Asynchronous signal synchronizer  |
 |  2  |[DFF_SYNC_tb.sv](./DFF_SYNC_tb.sv)          |Testbench for DFF_SYNC.v               |
 |  3  |[README.md](./README.md)                    |README file.                           |
 |  4  |[coverage_report.txt](./coverage_report.txt)|Code coverage report.                  |
@@ -13,8 +13,8 @@ Asynchronous 1bit signal Synchronizer Module.
 ## Status
 |Item                |Status    |
 |:-------------------|:---------|
-|Version             |0.10      |
-|Date                |2026/04/19|
+|Version             |0.20      |
+|Date                |2026/04/26|
 |Simulated           |Yes       |
 |Real Machine Checked|No        |
 
@@ -37,9 +37,10 @@ Asynchronous 1bit signal Synchronizer Module.
 |DATA_O   |Synchronized Data|
 
 ## Parameters
-|Parameter name|Description                           |
-|:-------------|:-------------------------------------|
-|OUT_STAGES    |Output Synchronizer Stage (Default: 2)|
+|Parameter name|Description                              |
+|:-------------|:----------------------------------------|
+|BIT_WIDTH     |Input/Output Data Bit Width. (Default: 4)|
+|OUT_STAGES    |Output Synchronizer Stage (Default: 2)   |
 
 ## Timing Chart
 ### Input
@@ -52,3 +53,5 @@ N/A
 ## Version History
 ### v0.10
 - Commit to this repository. (2026/04/19)
+### v0.20
+- Add BIT_WIDTH parameter. (2026/04/26)
